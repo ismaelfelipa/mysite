@@ -18,9 +18,10 @@
 
     --light-color: #f8f8f8;
     --dark-color: #505050;
+
     --text-color: #131313;
-    --link-color: #3b63fb;
-    --link-hover-color: #1d3ecf;
+    --link-color: var(--text-color);
+    --link-hover-color: var(--color-primary);
 
     /* fonts */
     --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -41,6 +42,12 @@
 
     /* nav height */
     --nav-height: 64px;
+
+    --spacing-xs: 4px;
+    --spacing-s: 6px;
+    --spacing-m: 10px;
+    --spacing-l: 14px;
+    --spacing-xl: 20px;
 }
 
 /* fallback fonts */
@@ -75,6 +82,10 @@
 
 body {
     display: none;
+
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -84,11 +95,11 @@ body {
 }
 
 body.appear {
-    display: block;
+    display: grid;
 }
 
 header {
-    height: var(--nav-height);
+    /*height: var(--nav-height);*/
 }
 
 header .header,
