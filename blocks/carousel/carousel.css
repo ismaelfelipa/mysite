@@ -1,9 +1,11 @@
 .carousel-container {
     position: relative;
 }
+
 .carousel .carousel-slides-container {
     position: relative;
 }
+
 .carousel nav {
     position: absolute;
     left: 50%;
@@ -38,7 +40,6 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    /*min-height: min(50vw, calc(100dvh - var(--header-height)));*/
 }
 
 .carousel .carousel-slide:has(.carousel-slide-content[data-align='center']) {
@@ -151,6 +152,7 @@
 
     .carousel .carousel-slide .carousel-slide-content {
         --slide-content-width: calc((100% - 184px) / 2);
+
         margin: 92px;
     }
 

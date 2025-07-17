@@ -12,13 +12,11 @@
 
 :root {
     /* colors */
-    --background-color: #ffffff;
+    --background-color: #fff;
     --color-primary: #0077B6;
     --color-secondary: #90BE6D;
-
     --light-color: #f8f8f8;
     --dark-color: #505050;
-
     --text-color: #131313;
     --link-color: var(--text-color);
     --link-hover-color: var(--color-primary);
@@ -42,7 +40,6 @@
 
     /* nav height */
     --nav-height: 64px;
-
     --spacing-xs: 4px;
     --spacing-s: 6px;
     --spacing-m: 10px;
@@ -82,10 +79,8 @@
 
 body {
     display: none;
-
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
-
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -99,7 +94,7 @@ body.appear {
 }
 
 header {
-    /*height: var(--nav-height);*/
+    /* height: var(--nav-height); */
 }
 
 header .header,
@@ -264,9 +259,10 @@ main > .section {
 }
 
 main > .section > div {
-    /*max-width: 1200px;*/
+    /* max-width: 1200px; */
     margin: auto;
-    /*padding: 0 24px;*/
+
+    /* padding: 0 24px; */
 }
 
 main > .section:first-of-type {
@@ -275,7 +271,7 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
     main > .section > div {
-        /*padding: 0 32px;*/
+        /* padding: 0 32px; */
     }
 }
 
