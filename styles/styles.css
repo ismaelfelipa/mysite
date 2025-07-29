@@ -12,7 +12,7 @@
 
 :root {
     /* colors */
-    --background-color: #fff;
+    --background-color: #efefef;
     --color-primary: #0077B6;
     --color-secondary: #90BE6D;
     --light-color: #f8f8f8;
@@ -20,6 +20,7 @@
     --text-color: #131313;
     --link-color: var(--text-color);
     --link-hover-color: var(--color-primary);
+    --color-white: white;
 
     /* fonts */
     --body-font-family: roboto, roboto-fallback, sans-serif;

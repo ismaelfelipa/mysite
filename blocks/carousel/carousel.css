@@ -164,3 +164,7 @@
         --slide-content-width: auto;
     }
 }
+
+.home .carousel .carousel-slides {
+    height: 100dvh;
+}

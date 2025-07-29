@@ -1,3 +1,7 @@
+.columns-container {
+    padding: 0 var(--spacing-xl);
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
