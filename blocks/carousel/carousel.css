@@ -42,6 +42,10 @@
     width: 100%;
 }
 
+.carousel.main .carousel-slide {
+    min-height: 100dvh;
+}
+
 .carousel .carousel-slide:has(.carousel-slide-content[data-align='center']) {
     align-items: center;
 }

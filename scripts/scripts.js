@@ -70,6 +70,24 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+function addClassCSSBody() {
+  const { pathname } = window.location;
+
+  if (!pathname || pathname === '/') {
+    return 'home';
+  }
+
+  const parts = pathname.replace(/^\//, '').split('/');
+
+  // eslint-disable-next-line no-plusplus
+  for (let i = parts.length - 1; i >= 0; i--) {
+    if (parts[i]) {
+      return parts[i].split('&')[0];
+    }
+  }
+
+  return 'home';
+}
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
@@ -81,6 +99,7 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
+    document.body.classList.add(addClassCSSBody());
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
